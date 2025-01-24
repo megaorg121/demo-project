@@ -1,0 +1,63 @@
+v1.2.1 (2024-02-5)
+
+- Update LICENSE and README files
+
+  - Updated LICENSE file with the latest version information and year.
+  - Improved the README with clearer installation instructions, project setup, and contributing guidelines.
+
+- Bug Fixes
+
+  - Fixed issue with incorrect error handling in the login process (`274`).
+  - Resolved memory leak in `emailService` module when handling large payloads.
+
+- Enhancements
+
+  - Optimized database queries for better performance in high-traffic scenarios.
+  - Improved API response time by caching frequently accessed data.
+  - Updated project dependencies to their latest stable versions to ensure better compatibility.
+
+- Documentation
+
+  - Added more detailed API documentation in the README (`/docs/api.md`).
+  - Clarified instructions for setting up the project for local development.
+  - Added troubleshooting section for common setup issues.
+
+- Refactoring
+
+  - Refactored the `authService` module for better readability and maintainability.
+  - Modularized the `email` functionality into its own package for easier updates and scalability.
+
+- Other Changes
+  - Updated error logging format for better debugging (`logger` improvements).
+  - Improved the test suite with new unit tests for the `userController`.
+
+v1.2.0 (2024-01-15)
+
+- New Features
+
+  - Added support for multi-language user interface (`265`).
+  - Introduced new `notifications` feature for sending alerts to users (`251`).
+
+- Bug Fixes
+  - Fixed a bug where user data was not properly saved to the database in edge cases.
+
+v1.1.1 (2023-11-10)
+
+- Bug Fixes
+
+  - Fixed issue causing some `POST` requests to fail intermittently in production.
+
+- Improvement
+  - Enhanced validation on form inputs in the user registration process.
+
+v1.1.0 (2023-09-18)
+
+- New Features
+
+  - Added support for exporting user data to CSV format (`239`).
+  - Implemented basic email notification system for user actions (`225`).
+
+- Bug Fixes
+  - Fixed issue where app crashed if no internet connection was available.
+- Documentation
+  - Updated README with new setup instructions and feature documentation.
